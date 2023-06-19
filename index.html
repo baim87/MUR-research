@@ -37,7 +37,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Events Report<span>.</span></a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">バリヤ<span>リサーチ</span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -81,14 +81,32 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3349_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"イベント","geo":"JP","time":"today 1-m"},{"keyword":"日本活动","geo":"JP","time":"today 1-m"},{"keyword":"event","geo":"JP","time":"today 1-m"}],"category":0,"property":"youtube"}, {"exploreQuery":"date=today%201-m&geo=JP&gprop=youtube&q=%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88,%E6%97%A5%E6%9C%AC%E6%B4%BB%E5%8A%A8,event&hl=en","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
-          </div>
+            <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3349_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"events","geo":"JP","time":"today 12-m"},{"keyword":"festivals","geo":"JP","time":"today 12-m"},{"keyword":"concert","geo":"JP","time":"today 12-m"},{"keyword":"seminars","geo":"JP","time":"today 12-m"}],"category":0,"property":"youtube"}, {"exploreQuery":"geo=JP&gprop=youtube&q=events,festivals,concert,seminars&hl=en-US&date=today 12-m,today 12-m,today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+
+          </div>          
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
             <h3>Volume search based on keywords in English, Japanese and Chinese.</h3>
             <p>
               In the past 30 days, we can clearly see that keyword <span class="text-primary">イベント</span> have the highest peak popularity regarding events search in Youtube Japan for about 75. While <span class="text-warning">Event</span> average peak popularity score was 4.
               While <span class="text-danger">日本活动</span> in chinese as Events in Japan have no search volume at all. However, there's some keywords related to Chinese when they're looking for some information before visiting Japan. Can check them in table below.
             </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Categories.</h3>
+            <p>
+              There's 4 big categories in Event related, I've found related in search terms.
+              <ul>
+                <li>Events</li>
+                <li>Concerts</li>
+                <li>festivals</li>
+                <li>seminars</li>
+              </ul>
+              <div class="embed-responsive embed-responsive-21by9">
+                <iframe height="900px" class="embed-responsive-item" src="http://127.0.0.1:5500/prefectureYoutube.html"></iframe>
+              </div>
+            </p>       
           </div>
           <div class="col-lg-12 order-3 mt-2 order-lg-3" >
             <h2>Chinese Search Keywords</h2>
@@ -105,13 +123,13 @@
             </table>
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
 
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients">
       <div class="container" data-aos="zoom-in">
+        <h2 class="center">Trending videos Chinese speakers search</h2>
 
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center">
@@ -756,6 +774,24 @@
       </div>
     </div>
   </footer><!-- End Footer -->
+
+  <!-- Modal -->
+<div class="modal fade" id="prefectureYoutube" tabindex="-1" aria-labelledby="prefectureYoutube" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Search By Prefectures</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3349_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("GEO_MAP", {"comparisonItem":[{"keyword":"events","geo":"JP","time":"today 12-m"},{"keyword":"festivals","geo":"JP","time":"today 12-m"},{"keyword":"concert","geo":"JP","time":"today 12-m"},{"keyword":"seminars","geo":"JP","time":"today 12-m"}],"category":0,"property":"youtube"}, {"exploreQuery":"geo=JP&gprop=youtube&q=events,festivals,concert,seminars&hl=en-US&date=today 12-m,today 12-m,today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
