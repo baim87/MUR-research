@@ -23,7 +23,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.0/dist/bootstrap-table.min.css">
+  <link href="assets/css/jquery.dataTables.min.css" rel="stylesheet">
 
 
   <!-- Template Main CSS File -->
@@ -44,8 +44,19 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Youtube</a></li>
-          <li><a class="nav-link scrollto" href="#services">Tiktok</a></li>
+          <li class="nav-item dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link scrollto" href="#youtube">Youtube</a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdown youtube">
+              <li><a class="dropdown-item scrollto" href="#youtube">Youtube Events</a></li>
+              <li><a class="dropdown-item scrollto" href="#youtubelifestyle">Youtube LifeStyle</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link scrollto" href="#tiktok">Tiktok</a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdown youtube">
+              <li><a class="dropdown-item scrollto" href="#tiktokevents">Tiktok Events</a></li>
+              <li><a class="dropdown-item scrollto" href="#tiktoklifestyle">Tiktok LifeStyle</a></li>
+            </ul>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -70,12 +81,12 @@
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <!-- ======= youtube Section ======= -->
+    <section id="youtube" class="about">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Youtube</h2>
-          <p>Events</p>
+          <p>Events in Japan</p>
         </div>
 
 
@@ -92,23 +103,30 @@
             </p>
           </div>
         </div>
+        <hr>
         <div class="row">
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+          <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
             <h3>Categories.</h3>
             <p>
               There's 4 big categories in Event related, I've found related in search terms.
               <ul>
-                <li>Events</li>
+                <li>Expo</li>
                 <li>Concerts</li>
                 <li>festivals</li>
                 <li>seminars</li>
               </ul>
-              <div class="embed-responsive embed-responsive-21by9">
-                <iframe height="900px" class="embed-responsive-item" src="http://127.0.0.1:5500/prefectureYoutube.html"></iframe>
-              </div>
-            </p>       
+              I would like to add some research volume on search engines, because when people are searching these keywords the search engines will add our youtube or tiktok to the result page.
+              I've devided the keywords into 3 section. Chinese, English and Japanese Search Keywords.
+            </p>
           </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-2 content" data-aos="fade-right" data-aos-delay="100">
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe width="366" class="embed-responsive-item" src="prefectureYoutube.html" style="overflow: hidden;"></iframe>
+            </div>
+          </div>
+
           <div class="col-lg-12 order-3 mt-2 order-lg-3" >
+            <hr>
             <h2>Chinese Search Keywords</h2>
             <table class="table table-dark table-striped tablemanager">
 
@@ -121,656 +139,292 @@
               <tbody id="chineseData">
               </tbody>
             </table>
+            <!-- ======= Clients Section ======= -->
+            <h2 class="center">Top 5 Chinese speakers videos related to Event</h2>
+
+            <div class="clients-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/SnlzRZY2wvc" title="2023年最新！現在入境日本要準備什麼？Visit Japan Web的填寫法全步驟教學《阿倫去旅行》" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/mkotveC1FjU" title="【4K 东京10大必去景点】Japan Tokyo Travel  | 日本自由行 | 亚洲旅游 | 畅游天下" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/pTnKTw4Gplg" title="京都自由行10個必去景點2023最新｜錦市場、平等院、宇治抹茶、米其林豬一拉麵真好吃？開箱SOUSOU村、銀閣寺、中村藤吉抹茶、雅洛觀光列車｜福岡女孩日本旅遊4KVLOG｜關西京都自由行必去景點#26" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/ainNBm8UwVg" title="日本自由行完全不會語言?!只學三句話，順利京阪自由行!!!!｜日本自由行注意事項｜京都大阪行程攻略" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/6iybMs25qJs" title="🇯🇵東京自由行五區精選，澀谷、原宿、上野各區特色整理｜老辣妹" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
+          <div class="col-lg-12 order-4 mt-2 order-lg-4" >
+            <hr>
+            <h2>English Search Keywords</h2>
+            <table class="table table-dark table-striped display">
+            <thead>
+                <tr>
+                  <th scope="col">Keywords</th>
+                  <th scope="col">Volume</th>
+                </tr>
+              </thead>
+              <tbody id="englishData">
+              </tbody>
+            </table>
+            <!-- ======= Clients Section ======= -->
+            <h2 class="center">Top 5 English speakers videos related to Event</h2>
+
+            <div class="clients-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/t8sUGydn5S0" title="We Went To Japan&#39;s WILDEST Festival (Kanamara Festival)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/A9dVUSwoxGI" title="Awesome! This is the Awaodori (Awa Dance)  in Tokushima Japan, one of Japan&#39;s most famous festivals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/WLIv7HnZ_fE" title="JAPAN - Where tradition meets the future | JNTO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/GYkq9Rgoj8E" title="WWDC 2023 — June 5 | Apple" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/HYSMJ-lM2t0" title="100 Things to do in TOKYO, JAPAN | Japan Travel Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            
+          </div>
+
         </div>
       </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-      <div class="container" data-aos="zoom-in">
-        <h2 class="center">Trending videos Chinese speakers search</h2>
-
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
+      <div id="youtubelifestyle" class="container mt-5" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Youtube</h2>
+          <p>Lifestyle in Japan</p>
         </div>
 
-      </div>
-    </section><!-- End Clients Section -->
-
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-      <div class="container" data-aos="fade-up">
 
         <div class="row">
-          <div class="image col-lg-6" style='background-image: url("assets/img/features.jpg");' data-aos="fade-right"></div>
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-receipt"></i>
-              <h4>Est labore ad</h4>
-              <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-cube-alt"></i>
-              <h4>Harum esse qui</h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-images"></i>
-              <h4>Aut occaecati</h4>
-              <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-shield"></i>
-              <h4>Beatae veritatis</h4>
-              <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-            </div>
+          <div class="col-lg-6 order-1 order-lg-2 ytframe" data-aos="fade-left" data-aos-delay="100">
+            <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3349_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"lifestyle","geo":"JP","time":"today 12-m"},{"keyword":"生活方式","geo":"JP","time":"today 12-m"}],"category":0,"property":"youtube"}, {"exploreQuery":"geo=JP&gprop=youtube&q=lifestyle,%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F&hl=en-US&date=today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Volume search based on keywords in English and Chinese.</h3>
+            <p>
+              In the past 1 year, we can clearly see that keyword <span class="text-primary">lifestyle</span> have the highest peak popularity regarding lifestyle search in Youtube Japan for about 58. While <span class="text-danger">生活方式</span> in chinese translated as Lifestyle in Japan have no search volume at all. However, there's some keywords related to Chinese when they're looking for some information before visiting Japan. Can check them in table below.
+            </p>
           </div>
         </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-12 pt-4 pt-lg-0 order-1 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3349_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("GEO_MAP", {"comparisonItem":[{"keyword":"lifestyle","geo":"JP","time":"today 12-m"},{"keyword":"生活方式","geo":"JP","time":"today 12-m"}],"category":0,"property":"youtube"}, {"exploreQuery":"geo=JP&gprop=youtube&q=lifestyle,%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F&hl=en-US&date=today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+          </div>
 
-      </div>
-    </section><!-- End Features Section -->
+          <div class="col-lg-12 pt-4 pt-lg-0 order-1 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Sub Categories.</h3>
+            <p>
+              There's 2 big sub categories in Lifestyle related, I've found related in search terms.
+              <ul>
+                <li>Style</li>
+                <li>Fashion</li>
+              </ul>
+              I've divided the keywords into 2 section. Chinese and English Search Keywords. However mainly Chinese speakers people are not using Youtube, they're using iQIYI and YOUKU.
+            </p>
+          </div>
+          <div class="col-lg-12 order-3 mt-2 order-lg-3" >
+            <hr>
+            <h2>English Search Keywords</h2>
+            <table class="table table-dark table-striped lifeEnglish">
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
+            <thead>
+                <tr>
+                  <th data-field="Keyword" scope="col">Keywords</th>
+                  <th data-field="Volume" scope="col">Volume</th>
+                </tr>
+              </thead>
+              <tbody id="lifeEnglish">
+              </tbody>
+            </table>
+            <!-- ======= Clients Section ======= -->
+            <h2 class="center">Top 5 English speakers videos related to Lifestyle</h2>
 
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Check our Services</p>
+            <div class="clients-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/W9q_5bgsWJY" title="アイロンいらず！リゾート感で大人な雰囲気アップするリネンシャツの着こなし方、教えます！　#編集長のスタイルクリニック 　#シャツ #ファッション" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/rIUdA21wEPc" title="Gucci Cruise 2024 Fashion Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/_pKdlDcdp1w" title="best hairstyles for guys in 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/gdK9ADiW20E" title="Cosy autumn ootd 🤎🌰🍁 #autumnfashion #ootd #youtubeshorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/SvOx7tA_Cv8" title="How To Make a McDonald&#39;s Cheeseburger" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-12 order-4 mt-2 order-lg-4" >
+            <hr>
+            <h2>Chinese Search Keywords</h2>
+            <table class="table table-dark table-striped LifeChinese">
+            <thead>
+                <tr>
+                  <th scope="col">Keywords</th>
+                  <th scope="col">Volume</th>
+                </tr>
+              </thead>
+              <tbody id="LifeChinese">
+              </tbody>
+            </table>
+            <!-- ======= Clients Section ======= -->
+            <h2 class="center">Top 5 Chinese speakers videos related to Event</h2>
+
+            <div class="clients-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/eS5Ndh0FmLM" title="男生這樣穿！妹子秒離開！盤點「男生的NG穿搭」！老人才穿POLO衫？深挖背心就代表你是XX？@geesquad_et" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/ZY1Nvtlh4H0" title="神級商品大公開！日本三大國民品牌☆超促咪冷知識☆【有的沒的】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/MX0Atx7vTGs" title="【普男學穿搭99%都不帥？他揭「這」細節出錯差很大】｜@hy_wearlife" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/TbhIST5pLMI" title="【拒绝节食】6种健康餐让你越吃越瘦！" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="ratio ratio-16x9 m-2">
+                    <iframe class="rounded" src="https://www.youtube.com/embed/WFhiZ6Edtlk" title="百貨公司這季買什麼？整棟挖寶給你看🔥｜居妮寇瑞" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            
+          </div>
+
         </div>
+      </div>
+
+    </section><!-- End Youtube Section -->
+
+    <!-- ======= tiktok Section ======= -->
+    <section id="tiktok" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Tiktok</h2>
+          <p>Events in Japan</p>
+        </div>
+
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4><a href="">Dele cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">Divera don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="text-center">
-          <h3>Call To Action</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="cta-btn" href="#">Call To Action</a>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Check our Portfolio</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/tiktok-algorithm.png" alt="tiktok-algorithm">
+          </div>          
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Understanding how Tiktok works.</h3>
+            <p>
+              Tiktok have two different entity and database source.
+              <ul>
+                <li>1. Tiktok</li>
+                <li>2. Douyin</li>
+              </ul>
+              <strong>Tiktok</strong> will serve any request from outside China mainland. While <strong>Douyin</strong> only will serve request from China users. Presently Tiktok and Douyin have different databases, and it won't connect or serve content from another platform. So, if we want to targetting people that speaking Chinese, this is crucial to understand. No, matter what language the user are using, the content always served from the user GEO location.
+            </p>
+              How the FYP and search works? For You page will be limited to the local satisfaction metrics per category that the user want to watch. Each metrics have layers of satisfaction, the satisfaction metrics are:
+              <ul style="margin-top: 16px;">
+                <li>Count of Views</li>
+                <li>Count of time of being watched</li>
+                <li>Count of Likes</li>
+                <li>Count of Share</li>
+              </ul>
+              When these metrics been satisfied, then it will be recommendation video that will be shown on the For You section. Each categories are competing based on these metrics to earn a spot on local then global FYP. i.e category travel. If tiktok thinks that #1 recommendation of Travel category or hashtag on Japan will be relevant to the user that wanted to watch Travel Japan from USA Geo, they will serve them. N.B the priority are local recommendation 1st if there's none, they will show the recommendation from other geo base video that relevant to the user.
           </div>
         </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row no-gutters">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
-          <div class="col-xl-7 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
-            <div class="content d-flex flex-column justify-content-center">
-              <h3>Voluptatem dignissimos provident quasi</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
-              <div class="row">
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-emoji-smile"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2" class="purecounter"></span>
-                    <p><strong>Happy Clients</strong> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-journal-richtext"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="2" class="purecounter"></span>
-                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-clock"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="4" class="purecounter"></span>
-                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-award"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="4" class="purecounter"></span>
-                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End .content-->
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Counts Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Team</h2>
-          <p>Check our Team</p>
-        </div>
-
+        <hr>
         <div class="row">
+          <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Proof.</h3>
+            <p>
+              I'm using VPN to access tiktok, the results are different based on the users geography.
+              When I'm login from Indonesia, the FYP will be showing local indonesia. When I'm login from Japan, the FYP will be showing local Japan, etc. This will cause problems, if we're trying to upload video from Japan that targetting people overseas, even if we're using content localization to target specific country. This will make our video have to competing in the local 1st before it can be recommended to the global FYP or search.
+            </p>
+            <h3>Solution.</h3>
+            <p>
+              To answer this issue, we need to upload localization video using VPN. i.e. If we would like to target USA, use USA VPN to upload the content so they will be stored to local USA database. If we're targetting Vietnam, use VPN Vietnam so they will be stored to local Vietnam. But if we would like to target China, we need to create Douyin account and upload the video to the Douyin account using China VPN.
+            </p>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-              </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-2 content" data-aos="fade-right" data-aos-delay="100">
+            <div class="ratio ratio-16x9">
+              <video width="320" height="240" controls>
+                <source src="assets/video/how-tiktok-work.mp4" type="video/mp4">
+              Your browser does not support the video tag.              
+              </video>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+          <div class="col-lg-12 order-3 mt-2 order-lg-3" >
+            <hr>
+            <h2>Chinese Search Keywords</h2>
+            <div class="douyin" style="height: 100vh;"></div>
+            <!-- ======= Clients Section ======= -->
+            <h2 class="center">Top 5 Chinese speakers videos related to Event & LifeStyle</h2>
+            <h3>I didn't embed the Douyin because request embed to Douyin made the loading very long</h3>
+              <a href="https://v.douyin.com/yRdnxuT/" target="_blank" rel="noopener noreferrer">Apparel</a>
+              <a href="https://v.douyin.com/yRRVoKo/" target="_blank" rel="noopener noreferrer">Apparel</a>
+              <a href="https://v.douyin.com/yRRVbbD/" target="_blank" rel="noopener noreferrer">Apparel</a>
+              <a href="https://v.douyin.com/yRRaUbr/" target="_blank" rel="noopener noreferrer">Makeups</a>
+              <a href="https://v.douyin.com/yRRhsoC/" target="_blank" rel="noopener noreferrer">Education</a>
+            
+          </div>
+          <div class="col-lg-12 order-4 mt-2 order-lg-4" >
+            <hr>
+            <h2>Tiktok English Demography</h2>
+            <img src="/assets/img/english tiktok age.png" alt="">
+            <img src="/assets/img/english tiktok interest.png" alt="">
+            <img src="/assets/img/english tiktok province.png" alt="">
+            <img src="/assets/img/english tiktok device.png" alt="">
+
+            <!-- ======= Clients Section ======= -->
+            <h2 class="center mt-5">Top 5 English speakers videos related to Event</h2>
+
+            <div class="clients-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@charming_roses/video/7172996337561128197" data-video-id="7172996337561128197" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@charming_roses" href="https://www.tiktok.com/@charming_roses?refer=embed">@charming_roses</a> 180 Rosas <a title="fpy" target="_blank" href="https://www.tiktok.com/tag/fpy?refer=embed">#fpy</a> <a title="amor" target="_blank" href="https://www.tiktok.com/tag/amor?refer=embed">#Amor</a> <a title="foryou" target="_blank" href="https://www.tiktok.com/tag/foryou?refer=embed">#foryou</a> <a title="viral" target="_blank" href="https://www.tiktok.com/tag/viral?refer=embed">#viral</a> <a title="foryoupage" target="_blank" href="https://www.tiktok.com/tag/foryoupage?refer=embed">#foryoupage</a> <a title="pink" target="_blank" href="https://www.tiktok.com/tag/pink?refer=embed">#pink</a> <a title="parati" target="_blank" href="https://www.tiktok.com/tag/parati?refer=embed">#parati</a> <a title="rosas" target="_blank" href="https://www.tiktok.com/tag/rosas?refer=embed">#rosas</a> <a title="love" target="_blank" href="https://www.tiktok.com/tag/love?refer=embed">#love</a> <a title="trending" target="_blank" href="https://www.tiktok.com/tag/trending?refer=embed">#trending</a> <a title="ramobuchon" target="_blank" href="https://www.tiktok.com/tag/ramobuchon?refer=embed">#ramobuchon</a> <a title="floralarrangements" target="_blank" href="https://www.tiktok.com/tag/floralarrangements?refer=embed">#floralarrangements</a> <a title="arreglosflorales" target="_blank" href="https://www.tiktok.com/tag/arreglosflorales?refer=embed">#arreglosflorales</a> <a title="homecoming" target="_blank" href="https://www.tiktok.com/tag/homecoming?refer=embed">#homecoming</a> <a title="red" target="_blank" href="https://www.tiktok.com/tag/red?refer=embed">#red</a> <a title="mexican" target="_blank" href="https://www.tiktok.com/tag/mexican?refer=embed">#mexican</a> <a title="explore" target="_blank" href="https://www.tiktok.com/tag/explore?refer=embed">#explore</a> <a title="miamor" target="_blank" href="https://www.tiktok.com/tag/miamor?refer=embed">#miamor</a> <a title="100" target="_blank" href="https://www.tiktok.com/tag/100?refer=embed">#100</a> <a title="luxury" target="_blank" href="https://www.tiktok.com/tag/luxury?refer=embed">#luxury</a> <a title="flower" target="_blank" href="https://www.tiktok.com/tag/flower?refer=embed">#flower</a> <a title="cute" target="_blank" href="https://www.tiktok.com/tag/cute?refer=embed">#cute</a> <a title="giftideas" target="_blank" href="https://www.tiktok.com/tag/giftideas?refer=embed">#giftideas</a> <a title="flowerbouquet" target="_blank" href="https://www.tiktok.com/tag/flowerbouquet?refer=embed">#flowerbouquet</a> <a target="_blank" title="♬ HASTA LA MUERTE - Eslabon Armado &#38; Ivan Cornejo" href="https://www.tiktok.com/music/HASTA-LA-MUERTE-7093989414799427586?refer=embed">♬ HASTA LA MUERTE - Eslabon Armado &#38; Ivan Cornejo</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>                 
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@shochanyade11/video/7245603474203872513" data-video-id="7245603474203872513" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@shochanyade11" href="https://www.tiktok.com/@shochanyade11?refer=embed">@shochanyade11</a> @コロン牡丹に返信  ドタキャンの悲しさよりも購入したお客様のお気持ち優先🫰 <a title="文様" target="_blank" href="https://www.tiktok.com/tag/%E6%96%87%E6%A7%98?refer=embed">#文様</a> <a title="オレノヘナ" target="_blank" href="https://www.tiktok.com/tag/%E3%82%AA%E3%83%AC%E3%83%8E%E3%83%98%E3%83%8A?refer=embed">#オレノヘナ</a>  <a title="アート" target="_blank" href="https://www.tiktok.com/tag/%E3%82%A2%E3%83%BC%E3%83%88?refer=embed">#アート</a>   <a title="宮崎県" target="_blank" href="https://www.tiktok.com/tag/%E5%AE%AE%E5%B4%8E%E7%9C%8C?refer=embed">#宮崎県</a> <a title="指甲花" target="_blank" href="https://www.tiktok.com/tag/%E6%8C%87%E7%94%B2%E8%8A%B1?refer=embed">#指甲花</a> <a title="ハンドメイド" target="_blank" href="https://www.tiktok.com/tag/%E3%83%8F%E3%83%B3%E3%83%89%E3%83%A1%E3%82%A4%E3%83%89?refer=embed">#ハンドメイド</a> <a title="henna" target="_blank" href="https://www.tiktok.com/tag/henna?refer=embed">#henna</a> <a title="mehndi" target="_blank" href="https://www.tiktok.com/tag/mehndi?refer=embed">#mehndi</a> <a title="tattoodesign" target="_blank" href="https://www.tiktok.com/tag/tattoodesign?refer=embed">#tattoodesign</a> <a title="vans" target="_blank" href="https://www.tiktok.com/tag/vans?refer=embed">#vans</a> <a title="mandala" target="_blank" href="https://www.tiktok.com/tag/mandala?refer=embed">#mandala</a> <a title="pattern" target="_blank" href="https://www.tiktok.com/tag/pattern?refer=embed">#pattern</a> <a title="drawing" target="_blank" href="https://www.tiktok.com/tag/drawing?refer=embed">#drawing</a> <a title="zentangle" target="_blank" href="https://www.tiktok.com/tag/zentangle?refer=embed">#zentangle</a> <a title="art" target="_blank" href="https://www.tiktok.com/tag/art?refer=embed">#art</a>  <a title="custom" target="_blank" href="https://www.tiktok.com/tag/custom?refer=embed">#custom</a> <a title="satisfying" target="_blank" href="https://www.tiktok.com/tag/satisfying?refer=embed">#satisfying</a> <a target="_blank" title="♬ Disney BGM Easy Winners(828906) - Yuumi Iida" href="https://www.tiktok.com/music/Disney-BGM-Easy-Winners-828906-6839757501148170241?refer=embed">♬ Disney BGM Easy Winners(828906) - Yuumi Iida</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@belladogarchive/video/7218798682706103553" data-video-id="7218798682706103553" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@belladogarchive" href="https://www.tiktok.com/@belladogarchive?refer=embed">@belladogarchive</a> 🚿😍😍😍 <a title="dog" target="_blank" href="https://www.tiktok.com/tag/dog?refer=embed">#dog</a> <a title="dogs" target="_blank" href="https://www.tiktok.com/tag/dogs?refer=embed">#dogs</a> <a title="doglover" target="_blank" href="https://www.tiktok.com/tag/doglover?refer=embed">#doglover</a> <a title="dogtok" target="_blank" href="https://www.tiktok.com/tag/dogtok?refer=embed">#dogtok</a> <a target="_blank" title="♬ One Love - Medley - Bob Marley &#38; The Wailers" href="https://www.tiktok.com/music/One-Love-Medley-6917194548540098561?refer=embed">♬ One Love - Medley - Bob Marley &#38; The Wailers</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
               </div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+              <div class="swiper-wrapper align-items-center">              
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@gamesdog33/video/7127118658723171586" data-video-id="7127118658723171586" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@gamesdog33" href="https://www.tiktok.com/@gamesdog33?refer=embed">@gamesdog33</a> <a title="game" target="_blank" href="https://www.tiktok.com/tag/game?refer=embed">#game</a> <a title="foryou" target="_blank" href="https://www.tiktok.com/tag/foryou?refer=embed">#foryou</a> <a target="_blank" title="♬ オリジナル楽曲 - game" href="https://www.tiktok.com/music/オリジナル楽曲-7127118689748404994?refer=embed">♬ オリジナル楽曲 - game</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@cjj_jiao/video/7198166762632858881" data-video-id="7198166762632858881" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@cjj_jiao" href="https://www.tiktok.com/@cjj_jiao?refer=embed">@cjj_jiao</a> <a title="メイク動画" target="_blank" href="https://www.tiktok.com/tag/%E3%83%A1%E3%82%A4%E3%82%AF%E5%8B%95%E7%94%BB?refer=embed">#メイク動画</a> <a title="毎日メイク" target="_blank" href="https://www.tiktok.com/tag/%E6%AF%8E%E6%97%A5%E3%83%A1%E3%82%A4%E3%82%AF?refer=embed">#毎日メイク</a> <a title="美容" target="_blank" href="https://www.tiktok.com/tag/%E7%BE%8E%E5%AE%B9?refer=embed">#美容</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a target="_blank" title="♬ Cute heartwarming BGM(836059) - Red Cat Blue" href="https://www.tiktok.com/music/Cute-heartwarming-BGM-836059-6850119944147830786?refer=embed">♬ Cute heartwarming BGM(836059) - Red Cat Blue</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div>
-
         </div>
-
       </div>
-    </section><!-- End Team Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
-        </div>
-
-        <div>
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <div class="row mt-5">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
+    </section><!-- End About Section -->    
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>Gp<span>.</span></h3>
-              <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Gp</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        &copy; バリヤ<span>リサーチ</span>.
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -793,7 +447,7 @@
   </div>
 </div>
 
-  <div id="preloader"></div>
+  <div id="preloader"><marquee class="text-center text-white mb-2" style="position: absolute;left:42%;bottom: 50%;width: 200px;">Loading bigData, please be patient</marquee></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
@@ -805,12 +459,13 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="https://unpkg.com/bootstrap-table@1.22.0/dist/bootstrap-table.min.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="assets/js/jquery.dataTables.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/api.js"></script>
   <script src="assets/js/tablemanager.js"></script>
+  <script src="assets/js/api.js"></script>
+  
   
 
 

@@ -291,3 +291,7 @@
   new PureCounter();
 
 })()
+
+$( document ).ready(function() {
+  $(".embed-footer.ng-scope").hide()
+});
